@@ -142,3 +142,8 @@ output: it feels like {location_temperature}°F in {location_info}
 
 ## error handling
 this script uses various checks and validation steps to ensure that the user's input is correct before making requests to the api. if any issues are detected, error messages are displayed, and the script exits
+
+## License
+>You can check out the full license [here](https://github.com/steelesh/feels-like-temp/LICENSE)
+
+This project is licensed under the terms of the **MIT** license.
