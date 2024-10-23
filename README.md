@@ -17,11 +17,11 @@ to run the script, you need the following:
 ## arguments
 to fetch the current "feels-like" temperature for a specified location, you can run the script with the following arguments:
 
-- `-c`: Specify the city name for fetching weather data (required)
-- `-s`: Specify the state code (optional)
-- `-C`: Specify the country code (optional)
-- `-l`: Log the weather output to a file
-- `-h`: Displays help and usage instructions
+- `-c`: specify the city name for fetching weather data (required)
+- `-s`: specify the state code (optional)
+- `-C`: specify the country code (optional)
+- `-l`: log the weather output to a file
+- `-h`: displays help and usage instructions
 
 > it's recommended to provide a state code and/or country code to get more accurate results
 
@@ -30,7 +30,8 @@ before running the script, you need to replace the placeholder api key on line 8
 
 <details>
 <summary><b>get the current "feels-like" temperature by city name and state code</b></summary>
-
+<br />
+    
 **input**
 
 `./feels_like_temp.sh -c "cincinnati" -s "oh"`
@@ -46,7 +47,8 @@ output: it feels like 70°F in Cincinnati, Ohio, US
 
 <details>
 <summary><b>get the current "feels-like" temperature by city name, state code, and country code</b></summary>
-
+<br />
+    
 **input**
 
 `./feels_like_temp.sh -c "cincinnati" -s "oh" -C "us"`
@@ -62,7 +64,8 @@ output: it feels like 70°F in Cincinnati, Ohio, US
 
 <details>
 <summary><b>get the current "feels-like" temperature by city name and state code, and log the weather data to a file</b></summary>
-
+<br />
+    
 **input**
 
 `./feels_like_temp.sh -c "cincinnati" -s "oh" -l weather.log`
@@ -79,7 +82,8 @@ output written to weather.log
 
 <details>
 <summary><b>display help and usage instructions</b></summary>
-
+<br />
+    
 **input**
 
 `./feels_like_temp.sh -h`
@@ -101,15 +105,18 @@ options:
 <hr>
 
 ### handling multiple returned locations
-if there are multiple locations with the same name, the script will prompt you to choose your desired one from a list, with each option being clearly numbered. You can select the desired location by entering the corresponding number. If none apply, you can press ctrl+c to exit. If you enter an invalid number, the script will display an error message
+if there are multiple locations with the same name, the script will prompt you to choose your desired one from a list, with each option being clearly numbered. you can select the desired location by entering the corresponding number. if none apply, you can press ctrl+c to exit. if you enter an invalid number, the script will display an error message
 
 <details>
 <summary><b>example</b></summary>
-
+<br />
+    
 **input**
+
 `./feels_like_temp.sh -c "springfield"`
 
 **output**
+
 ```bash
 multiple locations found for 'springfield':
 
@@ -131,7 +138,7 @@ output: it feels like {location_temperature}°F in {location_info}
 
 
 ## error handling
-this script uses various checks and validation steps to ensure that the user's input is correct before making requests to the api. If any issues are detected, error messages are displayed, and the script exits. 
+this script uses various checks and validation steps to ensure that the user's input is correct before making requests to the api. if any issues are detected, error messages are displayed, and the script exits
 
 ## build instructions
 1. clone the repository and change into the directory
