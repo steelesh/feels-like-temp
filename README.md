@@ -6,13 +6,16 @@ bash script that queries the [openweathermap api](https://openweathermap.org/) t
 
 **why it is useful**: this script provides users with a quick way to check how the temperature feels for any location directly from the command line
 
-## requirements
-to run the script, you need the following:
-
-1. `jq`: The script uses jq to parse JSON returned from the openweathermap api. you can check if it is already installed by running `jq --version` in your terminal.
-if applicable, [see download instructions here](https://jqlang.github.io/jq/download/)
-
-4. `openweathermap api key`: you'll need an api key from openweathermap. [see instructions here](https://openweathermap.org/appid)
+## build instructions
+1. clone the repository and change into the directory
+    ```
+    git clone https://github.com/steelesh/feels-like-temp.git && cd feels-like-temp
+    ```
+2. install `jq`. you can check if it is already installed by running `jq --version` in your terminal. if applicable, [see download instructions here](https://stedolan.github.io/jq/download/)
+3. get an api key from openweathermap. [see instructions here](https://openweathermap.org/appid)
+4. replace the placeholder api key on line 8 with your own openweathermap api key
+5. in the repository directory, run `chmod +x feels_like_temp.sh` to make the script executable
+6. run as per the [usage](#usage) instructions
 
 ## arguments
 to fetch the current "feels-like" temperature for a specified location, you can run the script with the following arguments:
@@ -139,14 +142,3 @@ output: it feels like {location_temperature}°F in {location_info}
 
 ## error handling
 this script uses various checks and validation steps to ensure that the user's input is correct before making requests to the api. if any issues are detected, error messages are displayed, and the script exits
-
-## build instructions
-1. clone the repository and change into the directory
-    ```
-    git clone https://github.com/steelesh/feels-like-temp.git && cd feels-like-temp
-    ```
-2. install `jq`. [see instructions here](https://stedolan.github.io/jq/download/)
-3. get an api key from openweathermap. [see instructions here](https://openweathermap.org/appid)
-4. replace the placeholder api key on line 8 with your own openweathermap api key
-5. in the repository directory, run `chmod +x feels_like_temp.sh` to make the script executable
-6. run as per the [usage](#usage) instructions
