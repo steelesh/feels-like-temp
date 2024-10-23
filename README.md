@@ -145,7 +145,8 @@ this script uses various checks and validation steps to ensure that the user's i
     ```
     git clone https://github.com/steelesh/feels-like-temp.git && cd feels-like-temp
     ```
-2. install `jq` as per the [requirements](#requirements)
-3. get an api key from openweathermap
+2. install `jq`. [see instructions here](https://stedolan.github.io/jq/download/)
+3. get an api key from openweathermap. [see instructions here](https://openweathermap.org/appid)
 4. replace the placeholder api key on line 8 with your own openweathermap api key
-5. run as per the [usage](#usage) instructions
+5. in the repository directory, run `chmod +x feels_like_temp.sh` to make the script executable
+6. run as per the [usage](#usage) instructions
