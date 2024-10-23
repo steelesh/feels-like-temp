@@ -9,10 +9,10 @@ bash script that queries the [openweathermap api](https://openweathermap.org/) t
 ## requirements
 to run the script, you need the following:
 
-1. `jq`: The script uses jq to parse JSON returned from the openweathermap api.
-[see download instructions here](https://jqlang.github.io/jq/download/)
+1. `jq`: The script uses jq to parse JSON returned from the openweathermap api. you can check if it is already installed by running `jq --version` in your terminal.
+if applicable, [see download instructions here](https://jqlang.github.io/jq/download/)
 
-2. openweathermap api key: you'll need an api key from openweathermap. [see instructions here](https://openweathermap.org/appid)
+4. `openweathermap api key`: you'll need an api key from openweathermap. [see instructions here](https://openweathermap.org/appid)
 
 ## arguments
 to fetch the current "feels-like" temperature for a specified location, you can run the script with the following arguments:
